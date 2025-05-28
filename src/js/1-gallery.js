@@ -1,7 +1,5 @@
-// Описаний в документації
-import SimpleLightbox from "simplelightbox";
-// Додатковий імпорт стилів
-import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox'
+import 'simplelightbox/dist/simple-lightbox.min.css'
 
 const images = [
       {
@@ -71,9 +69,9 @@ const images = [
 
 const galleryList = document.querySelector(".gallery");
 
-galleryList.insertAdjacentHTML("afterbegin", creatMarkUp(images));
+galleryList.insertAdjacentHTML("afterbegin", createMarkUp(images));
 
-function creatMarkUp(arr) {
+function createMarkUp(arr) {
     return arr.map(item => `
         <li class="gallery-item">
             <a class="gallery-link" href="${item.original}">
