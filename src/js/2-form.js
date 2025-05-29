@@ -27,6 +27,8 @@ function localData() {
     }
 }
 
+localData();
+
 form.addEventListener("submit", (event) => {
     event.preventDefault()
     if (!formData.email || !formData.message) {
